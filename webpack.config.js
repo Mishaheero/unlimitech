@@ -4,22 +4,17 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
-        main: './src/app/app.js',
+        main: './src/app/app.js', 
         styles: './src/styles/styles.scss'
     },
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-    },
-    watchOptions: {
-        ignored: [
-            './node_modules/',
-            './dist/',
-        ],
+        clean: true,
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'styles.bundle.css',
+            filename: '[name].bundle.css',
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
@@ -27,26 +22,20 @@ module.exports = {
             'window.jQuery': 'jquery'
         })
     ],
-    stats: {
-        children: true,
-    },
     module: {
         rules: [
             {
                 test: /\.js$/,
                 include: path.resolve(__dirname, 'src/app'),
-                use: [
-                    {
-                        loader: 'babel-loader',
-                        options: {
-                            presets: ['@babel/preset-env']
-                        }
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
                     }
-                ]
+                }
             },
             {
-                test: /\.scss$/,
-                include: path.resolve(__dirname, 'src/styles'),
+                test: /\.scss$/, 
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
@@ -54,15 +43,26 @@ module.exports = {
                         loader: 'sass-loader',
                         options: {
                             sourceMap: true,
-                            implementation: require("sass")
+                            implementation: require('sass')
                         }
                     }
                 ]
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                ],
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
             }
         ]
-    }
+    },
+    resolve: {
+        extensions: ['.js', '.scss', '.css'],
+    },
+    devtool: 'source-map',
 };

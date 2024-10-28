@@ -1,0 +1,14 @@
+.slick__btn {
+    border: 1px solid $white;
+    background-color: transparent;
+    border-radius: $border-radius-small;
+    padding: 10px 16px;
+
+    .slick__link {
+        color: $white;
+        text-decoration: none;
+        font-size: $h4;
+        font-weight: $font-w-bold;
+    }
+}
+
