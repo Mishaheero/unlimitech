@@ -1,0 +1,150 @@
+// Top bar
+
+.top-bar {
+  background-color: $main-color;
+  padding: 9px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+
+  &__text {
+    font-size: $h5;
+    color: $white;
+  }
+}
+
+// Menu
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__half-left {
+    display: flex;
+  }
+
+  &__logo-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__item {
+    margin-left: 32px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $text-color;
+    font-size: $h2;
+
+    &--highlight {
+      color: $main-color;
+      font-weight: 700;
+    }
+  }
+
+  &__search-and-icons {
+    display: flex;
+  }
+
+  &__search {
+    width: 225px;
+    padding: 14px 0 14px 20px;
+    font-size: $h6;
+    border-radius: 80px;
+    cursor: default;
+    border: 1px solid $gray-dark;
+    color: $text-color;
+
+    &::placeholder {
+      color: $text-color;
+    }
+  }
+
+  &__custom-search {
+    position: relative;
+  }
+
+  &__icons {
+    display: flex;
+
+    &-decor {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border: 1px solid $gray-dark;
+      border-radius: 50%;
+      margin: 0 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 36px;
+        height: 36px;
+        background-color: $gray;
+        border-radius: 50%;
+        z-index: -1;
+      }
+
+      &--input {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        border: none;
+        transform: translateY(-100%);
+      }
+    }
+  }
+
+  &__mark {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    width: 8px;
+    height: 8px;
+    background-color: $main-color;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}

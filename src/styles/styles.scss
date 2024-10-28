@@ -1,2 +1,18 @@
-@import '~reset-css/reset';
+@import "type";
+@import "reset";
+@import "containers";
+@import "variables";
+@import "header";
+
+html, body {
+    font-family: "Inter" !important;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: $letter-spacing;
+}
+
+h1 {
+    font-weight: 400;
+}
+
 
