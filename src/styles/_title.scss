@@ -5,8 +5,19 @@
     transform: translate(-50%, -50%);
     font-size: $h1;
     color: $white;
-    font-weight: $font-w-bold;
+    font-weight: $font-w-black;
     z-index: 1;
     transition: opacity 300ms;
     opacity: 0;
+}
+
+.subscription__title {
+    font-size: $h1;
+    font-weight: $font-w-extra-bold;
+    color: $white;
+    line-height: 1;
+
+    &--highlight {
+        font-weight: 900;
+    }
 }
