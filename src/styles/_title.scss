@@ -1,0 +1,12 @@
+.item__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: $h1;
+    color: $white;
+    font-weight: $font-w-bold;
+    z-index: 1;
+    transition: opacity 300ms;
+    opacity: 0;
+}
