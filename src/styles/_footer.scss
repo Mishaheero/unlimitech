@@ -44,8 +44,8 @@
     text-align: end;
 
     &-text {
-        font-size: $h7;
-        color: $black;
+      font-size: $h7;
+      color: $black;
     }
   }
 
@@ -53,5 +53,40 @@
     width: 16px;
     height: 16px;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+
+    &__contact {
+      order: 0;
+    }
+
+    .contact-title--end {
+      text-align: center;
+    }
+
+    &__socials {
+      order: 1;
+    }
+
+    &__content {
+      flex-direction: column;
+      text-align: center;
+      row-gap: 49px;
+    }
+
+    .contact__link {
+      justify-content: start;
+    }
+
+    .contact__info {
+      text-align: left;
+      
+      &-text {
+        margin-left: 32px;
+      }
+    }
   }
 }

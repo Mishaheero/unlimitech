@@ -28,31 +28,3 @@ $h5: 14px;
 $h6: 13px;
 $h7: 12px;
 $h8: 11px;
-
-@media (max-width: 1399px) {
-  h1 {
-    font-size: $h0 * 0.9 !important;
-  }
-  h2 {
-    font-size: $h1 * 0.6 !important;
-  }
-  h4 {
-    font-size: $h3 * 0.8 !important;
-  }
-}
-
-@media (max-width: 1199px) {
-  h3 {
-    font-size: $h2 * 0.9 !important;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: $h0 * 0.7 !important;
-  }
-
-  h3 {
-    font-size: $h2 !important;
-  }
-}
