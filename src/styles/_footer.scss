@@ -46,6 +46,7 @@
     &-text {
       font-size: $h7;
       color: $black;
+      line-height: 20px;
     }
   }
 
@@ -58,6 +59,9 @@
 
 @media (max-width: 768px) {
   .footer {
+    &__content {
+      padding: 31px 0;
+    }
 
     &__contact {
       order: 0;
@@ -78,14 +82,14 @@
     }
 
     .contact__link {
-      justify-content: start;
+      justify-content: center;
     }
 
     .contact__info {
       text-align: left;
-      
+
       &-text {
-        margin-left: 32px;
+        margin-left: 44px;
       }
     }
   }

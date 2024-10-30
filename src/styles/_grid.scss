@@ -118,5 +118,20 @@
       grid-row: span 1;
       height: 174px;
     }
+
+    &--mask::before {
+      background: linear-gradient(
+        rgba(168, 168, 168, 0.4) 0%,
+        rgba(168, 168, 168, 0.4) 10%,
+        rgba(45, 45, 45, 0.4) 50%,
+        rgba(45, 45, 45, 0.7) 100%
+      );
+      z-index: 1;
+    }
+
+    .item__title {
+      opacity: 1;
+      font-size: $h2;
+    }
   }
 }

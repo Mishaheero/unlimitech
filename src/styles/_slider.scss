@@ -124,7 +124,7 @@
     align-items: end;
     position: absolute;
     width: 100%;
-    bottom: 49px;
+    bottom: 48px;
     padding: 0 48px 48px 48px;
   }
 
@@ -148,12 +148,24 @@
 }
 
 @media (max-width: 992px) {
-  .slick__box {
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-  .slick__content {
-    max-width: 100%;
+  .slick__wrapper {
+    .slick__box {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .slick__content {
+      max-width: 100%;
+    }
+
+    .slick__title {
+      font-size: 28px;
+    }
+
+    .slick__description {
+      line-height: 20px;
+      color: $light;
+      font-size: $h5;
+    }
   }
 }
 
@@ -161,12 +173,6 @@
   .slick__wrapper {
     .slick-arrows__wrapper {
       display: none;
-    }
-
-    .slick__description {
-      line-height: 20px;
-      color: $light;
-      font-size: $h4;
     }
 
     .slick__box {

@@ -1,36 +1,48 @@
 .item__title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: $h1;
-    color: $white;
-    font-weight: $font-w-black;
-    z-index: 1;
-    transition: opacity 300ms;
-    opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: $h1;
+  color: $white;
+  font-weight: $font-w-black;
+  z-index: 1;
+  transition: opacity 300ms;
+  opacity: 0;
 }
 
 .subscription__title {
-    font-size: $h2;
-    font-weight: $font-w-extra-bold;
-    color: $white;
-    line-height: 1;
+  font-size: $h2;
+  font-weight: $font-w-extra-bold;
+  color: $white;
+  line-height: 1;
 
-    &--highlight {
-        font-weight: 900;
-    }
+  &--highlight {
+    font-weight: 900;
+    font-size: 28px;
+  }
 }
 
-.socials-title, .contact-title {
-    font-size: $h2;
-    font-weight: $font-w-bold;
-    color: $black;
-    font-size: $h4;
-    margin-bottom: 8px;
-    line-height: 22px;
+.socials-title,
+.contact-title {
+  font-size: $h2;
+  font-weight: $font-w-bold;
+  color: $black;
+  font-size: $h4;
+  margin-bottom: 8px;
+  line-height: 22px;
 
-    &--end {
-        text-align: end;
+  &--end {
+    text-align: end;
+  }
+}
+
+@media (max-width: 992px) {
+  .subscription__title {
+    font-size: 20px;
+
+    &--highlight {
+      font-size: 24px;
     }
+  }
 }
