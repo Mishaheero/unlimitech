@@ -4,6 +4,7 @@ $gray-dark: #eaeaea;
 $text-color: #2c2e35;
 $text-color-light: #6b6b6b;
 $white: #ffffff;
+$light: #EEEEEE;
 $black: #292929;
 
 $font-family-primary: "Inter";
@@ -37,5 +38,11 @@ $h8: 10px;
   }
   h3, p {
     font-size: $h2 * 0.8 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: $h0 * 0.7 !important;
   }
 }
