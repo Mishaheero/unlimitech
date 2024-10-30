@@ -1,4 +1,3 @@
-// slider.js
 import "slick-carousel/slick/slick.css"; // Import Slider
 import "slick-carousel"; // Import Slick Slider
 import $ from "jquery"; // Import jQuery
@@ -12,8 +11,12 @@ export function initSlider() {
       autoplaySpeed: 4000,
       dots: true,
       arrows: true,
-      prevArrow: $(".slick-prev"), 
+      prevArrow: $(".slick-prev"),
       nextArrow: $(".slick-next"),
+      cssEase: "ease-in-out",
+      speed: 800,
+      lazyLoad: "progressive",
+      infinite: false,
     });
 
     $(".slick-dots button").text("");

@@ -2,13 +2,20 @@
     border: 1px solid $white;
     background-color: transparent;
     border-radius: $border-radius-small;
+    text-decoration: none;
     padding: 10px 16px;
+    transition: background-color 300ms;
 
     .slick__link {
         color: $white;
-        text-decoration: none;
         font-size: $h4;
         font-weight: $font-w-bold;
+    }
+
+    &--hover {
+        &:hover {
+            background-color: $black;
+        }
     }
 }
 

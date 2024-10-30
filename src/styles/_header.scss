@@ -90,6 +90,16 @@
 
   &__custom-search {
     position: relative;
+
+    &--hover:hover {
+      .navigation__icon {
+        circle,
+        path,
+        ellipse {
+          stroke: $main-color;
+        }
+      }
+    }
   }
 
   &__icons {
@@ -105,6 +115,7 @@
       border: 1px solid $gray-dark;
       border-radius: 50%;
       margin: 0 10px;
+      transition: all 300ms;
 
       &:last-child {
         margin-right: 0;
@@ -129,6 +140,20 @@
         top: 100%;
         border: none;
         transform: translateY(-100%);
+      }
+
+      circle,
+      path,
+      ellipse {
+        transition: stroke 300ms;
+      }
+
+      &--hover:hover {
+        circle,
+        path,
+        ellipse {
+          stroke: $main-color;
+        }
       }
     }
   }

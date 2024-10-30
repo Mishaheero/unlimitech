@@ -57,13 +57,13 @@
       <div class="container-wide">
         <div class="navigation">
           <div class="navigation__half-left">
-            <div class="navigation__logo">
+            <a href="/index.html" class="navigation__logo">
               <img
                 class="navigation__logo-img"
                 src="src/images/identify/logo.png"
                 alt="Unlimitech Logo"
               />
-            </div>
+            </a>
             <nav class="navigation__wrapper">
               <ul class="navigation__list">
                 <li class="navigation__item">
@@ -106,14 +106,16 @@
           </div>
           <div class="navigation__half-right">
             <div class="navigation__search-and-icons">
-              <div class="navigation__custom-search">
+              <div
+                class="navigation__custom-search navigation__custom-search--hover"
+              >
                 <input
                   class="navigation__search"
                   type="text"
                   placeholder="Wyszukaj"
                 />
                 <div
-                  class="navigation__icons-decor navigation__icons-decor--input"
+                  class="navigation__icons-decor navigation__icons-decor--input navigation__icons-decor--hover"
                 >
                   <svg class="navigation__icon" viewBox="0 0 20 20" fill="none">
                     <circle cx="9.16666" cy="9.16669" r="5" stroke="#413F3D" />
@@ -126,7 +128,9 @@
                 </div>
               </div>
               <div class="navigation__icons">
-                <div class="navigation__icons-decor">
+                <div
+                  class="navigation__icons-decor navigation__icons-decor--hover"
+                >
                   <svg class="navigation__icon" fill="none">
                     <path
                       d="M16.4395 17.0392C16.0597 15.9761 15.2227 15.0366 14.0584 14.3665C12.8941 13.6965 11.4675 13.3333 9.99998 13.3333C8.53242 13.3333 7.10587 13.6965 5.94157 14.3665C4.77728 15.0366 3.94031 15.9761 3.56047 17.0392"
@@ -143,7 +147,9 @@
                     />
                   </svg>
                 </div>
-                <div class="navigation__icons-decor">
+                <div
+                  class="navigation__icons-decor navigation__icons-decor--hover"
+                >
                   <svg class="navigation__icon" viewBox="0 0 20 20" fill="none">
                     <path
                       d="M3.70899 11.5903L9.50284 17.033C9.64799 17.1693 9.72056 17.2375 9.79948 17.2721C9.92736 17.3281 10.0728 17.3281 10.2007 17.2721C10.2796 17.2375 10.3522 17.1693 10.4974 17.033L16.2912 11.5903C17.9214 10.0589 18.1193 7.53893 16.7483 5.77182L16.4905 5.43955C14.8503 3.32559 11.5581 3.68011 10.4057 6.09481C10.2429 6.4359 9.75734 6.4359 9.59455 6.09481C8.44208 3.68011 5.14987 3.32559 3.50972 5.43956L3.25192 5.77183C1.88089 7.53894 2.07885 10.0589 3.70899 11.5903Z"
@@ -151,7 +157,9 @@
                     />
                   </svg>
                 </div>
-                <div class="navigation__icons-decor">
+                <div
+                  class="navigation__icons-decor navigation__icons-decor--hover"
+                >
                   <svg class="navigation__icon" viewBox="0 0 20 20" fill="none">
                     <path
                       d="M6.66669 10L6.66669 6.66667C6.66669 4.82572 8.15907 3.33333 10 3.33333V3.33333C11.841 3.33333 13.3334 4.82572 13.3334 6.66667L13.3334 10"
@@ -177,7 +185,7 @@
           <div class="slick__wrapper">
             <div class="slick-arrows__wrapper">
               <button
-                class="slick-prev slick-arrow"
+                class="slick-prev slick-arrow slick-arrow--hover"
                 aria-label="Previous"
                 type="button"
               >
@@ -193,7 +201,7 @@
                 </svg>
               </button>
               <button
-                class="slick-next slick-arrow"
+                class="slick-next slick-arrow slick-arrow--hover"
                 aria-label="Next"
                 type="button"
               >
@@ -212,21 +220,17 @@
             <div class="slick__slider">
               <div class="slide">
                 <img
-                  src="src/images/slider/photo-2.jpg"
+                  data-lazy="src/images/slider/photo-2.jpg"
                   alt="Description of photo 2"
                 />
               </div>
               <div class="slide">
-                <img
-                  src="src/images/slider/photo-2.jpg"
-                  alt="Description of photo 2"
-                />
+                <img data-lazy="src/images/slider/photo-2.jpg" alt="Description
+                of photo 2" />
               </div>
               <div class="slide">
-                <img
-                  src="src/images/slider/photo-2.jpg"
-                  alt="Description of photo 2"
-                />
+                <img data-lazy="src/images/slider/photo-2.jpg" alt="Description
+                of photo 2" />
               </div>
             </div>
             <div class="slick__box">
@@ -238,11 +242,9 @@
                   ipsa quae ab.
                 </p>
               </div>
-              <div class="slick__btn">
-                <a href="#" class="slick__link slick__link--more"
-                  >Zobacz więcej</a
-                >
-              </div>
+              <a href="#" class="slick__btn slick__btn--hover">
+                <span class="slick__link slick__link--more">Zobacz więcej</span>
+              </a>
             </div>
           </div>
         </div>
@@ -371,7 +373,7 @@
         </div>
       </section>
     </main>
-    <script src="dist/main.bundle.js"></script>
+    <script src="dist/main.bundle.js" defer></script>
   </body>
 
   <footer class="footer">
@@ -475,7 +477,9 @@
           </ul>
         </div>
         <div class="footer__contact">
-          <h3 class="contact-title contact-title--end">Skontaktuj się z nami</h3>
+          <h3 class="contact-title contact-title--end">
+            Skontaktuj się z nami
+          </h3>
           <p class="contact__info">
             <a href="tel:+48486231802" class="contact__link">
               <svg class="contact__icon">
