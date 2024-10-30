@@ -6,8 +6,13 @@
 }
 
 .grid__item {
+  overflow: hidden;
   position: relative;
-  transition: background 300ms, opacity 300ms;
+  transition: background 300ms, opacity 300ms, transform 300ms;
+
+  img {
+    transition: transform 300ms;
+  }
 
   &--mask::before {
     content: "";
@@ -31,14 +36,19 @@
     &::before {
       background: linear-gradient(
         rgba(168, 168, 168, 0.4) 0%,
-        rgba(168, 168, 168, 0.3) 10%,
+        rgba(168, 168, 168, 0.4) 10%,
         rgba(45, 45, 45, 0.4) 50%,
-        rgba(45, 45, 45, 0) 100%
+        rgba(45, 45, 45, 0.7) 100%
       );
+      z-index: 1;
     }
 
     .item__title {
       opacity: 1;
+    }
+
+    img {
+      transform: scale(1.1);
     }
   }
 }

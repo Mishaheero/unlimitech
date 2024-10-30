@@ -4,7 +4,7 @@ $gray-dark: #eaeaea;
 $text-color: #2c2e35;
 $text-color-light: #6b6b6b;
 $white: #ffffff;
-$light: #EEEEEE;
+$light: #eeeeee;
 $black: #292929;
 
 $font-family-primary: "Inter";
@@ -33,16 +33,26 @@ $h8: 11px;
   h1 {
     font-size: $h0 * 0.9 !important;
   }
-  h2, p {
-    font-size: $h1 * 0.7 !important;
+  h2 {
+    font-size: $h1 * 0.6 !important;
   }
-  h3, p {
-    font-size: $h2 * 0.8 !important;
+  h4 {
+    font-size: $h3 * 0.8 !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  h3 {
+    font-size: $h2 * 0.9 !important;
   }
 }
 
 @media (max-width: 768px) {
   h1 {
     font-size: $h0 * 0.7 !important;
+  }
+
+  h3 {
+    font-size: $h2 !important;
   }
 }

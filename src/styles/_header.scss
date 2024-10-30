@@ -223,7 +223,7 @@
 
     .navigation__link,
     .top-bar__text {
-      font-size: $h2 * 0.8;
+      font-size: $h3 * 0.8;
     }
   }
 }
@@ -245,7 +245,7 @@
 
     .navigation__link,
     .top-bar__text {
-      font-size: $h2 * 0.7;
+      font-size: $h3 * 0.7;
     }
   }
 }
@@ -253,7 +253,7 @@
 @media (max-width: 992px) {
   .navigation {
     .navigation__link {
-      font-size: $h2;
+      font-size: $h3;
     }
 
     &__wrapper {
