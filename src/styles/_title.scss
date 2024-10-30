@@ -21,3 +21,16 @@
         font-weight: 900;
     }
 }
+
+.socials-title, .contact-title {
+    font-size: $h1;
+    font-weight: $font-w-bold;
+    color: $black;
+    font-size: $h3;
+    margin-bottom: 8px;
+    line-height: 22px;
+
+    &--end {
+        text-align: end;
+    }
+}
