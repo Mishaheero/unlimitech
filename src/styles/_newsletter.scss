@@ -11,7 +11,7 @@
   }
 
   &__description {
-    font-size: $h5;
+    font-size: $h6;
     font-weight: $font-w-medium;
     color: $white;
     line-height: 18px;
@@ -48,7 +48,7 @@
   &__input {
     width: 340px;
     padding: 14px 0 14px 20px;
-    font-size: $h4;
+    font-size: $h5;
     border-radius: 80px;
     cursor: default;
     border: 1px solid $gray-dark;
@@ -106,7 +106,7 @@
     display: flex;
     align-items: center;
     color: $white;
-    font-size: $h6;
+    font-size: $h7;
     line-height: 18px;
     gap: 8px;
     margin-left: 6px;
