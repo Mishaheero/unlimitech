@@ -45,7 +45,7 @@ module.exports.lazyLoading = () => {
 
     // Function to set the image source
     const setImage = (id) => {
-      img.src = `https://picsum.photos/id/${id}/300/200`;
+      img.src = `https://picsum.photos/id/${id}/1200/800`;
     };
 
     // Set the image to load
