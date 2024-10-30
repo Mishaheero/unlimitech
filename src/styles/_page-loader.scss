@@ -1,0 +1,101 @@
+.page-wrap {
+    position: relative;
+  }
+  
+  .page-loader {
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    transition: opacity 0s .8s;
+    opacity: 0;
+    z-index: 901;
+  }
+  
+  .page-loader__full,.page-loader__full div {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .page-loader__full div {
+    background-color: $main-color;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+  }
+  
+  .page-loader__half {
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+  
+  .page-loader__half div {
+    background-color: $main-color;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(0);
+  }
+  
+  .page-loader__half--top {
+    top: 0;
+  }
+  
+  .page-loader__half--top div {
+    transform-origin: 50% 0;
+  }
+  
+  .page-loader__half--bottom {
+    bottom: 0;
+  }
+  
+  .page-loader__half--bottom div {
+    transform-origin: 50% 100%;
+  }
+  
+  .page-loader--loading {
+    opacity: 1;
+    pointer-events: all;
+    transition: none;
+  }
+  
+  .page-loader--loading .page-loader__full div {
+    transform: scaleX(1);
+    transition: transform .8s ease-in;
+  }
+  
+  .page-loader--loading .page-loader__half div {
+    transform: scaleY(1);
+    transition: transform 0s .8s;
+  }
+  
+  .page-loader--loading .page-loader__half--top div {
+    transform-origin: 50% 100%;
+  }
+  
+  .page-loader--loading .page-loader__half--bottom div {
+    transform-origin: 50% 0;
+  }
+  
+  .page-loader--loaded .page-loader__half div {
+    transform: scaleY(0);
+    transition: transform .8s ease-in;
+  }
+  
+  .page-loader--loaded .page-loader__half--top div {
+    transform-origin: 50% 0;
+  }
+  
+  .page-loader--loaded .page-loader__half--bottom div {
+    transform-origin: 50% 100%;
+  }

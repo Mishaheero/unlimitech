@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="dist/styles.bundle.css" />
   </head>
   <body>
-    <div class="overflow-hiiden">
+    <div class="overflow-hidden">
+      <div class="page-loader page-loader--loading">
+        <div class="page-loader__full">
+          <div></div>
+        </div>
+        <div class="page-loader__half page-loader__half--top">
+          <div></div>
+        </div>
+        <div class="page-loader__half page-loader__half--bottom">
+          <div></div>
+        </div>
+      </div>
       <header>
         <div class="top-bar">
           <div class="container">
@@ -57,7 +68,7 @@
         </div>
         <div class="container-wide">
           <div class="navigation">
-            <div class="navigation__logo-wrapper">
+            <div class="navigation__logo-wrapper entry entry-left">
               <a href="/index.html" class="navigation__logo">
                 <img
                   class="navigation__logo-img"
@@ -66,7 +77,7 @@
                 />
               </a>
             </div>
-            <nav class="navigation__wrapper">
+            <nav class="navigation__wrapper entry entry-left">
               <div
                 id="navToggle"
                 class="navigation__toggle navigation__toggle-decor navigation__toggle navigation__toggle-decor--d-none"
@@ -113,7 +124,7 @@
                 </li>
               </ul>
             </nav>
-            <div class="navigation__search-wrapper">
+            <div class="navigation__search-wrapper entry entry-right">
               <div class="navigation__search-input">
                 <div
                   class="navigation__custom-search navigation__custom-search--hover"
@@ -147,7 +158,7 @@
                 </div>
               </div>
             </div>
-            <div class="navigation__icons">
+            <div class="navigation__icons entry entry-right">
               <div
                 class="navigation__icons-decor navigation__icons-decor--hover"
               >
@@ -200,7 +211,7 @@
       <main>
         <section>
           <div class="container-wide">
-            <div class="slick__wrapper">
+            <div class="slick__wrapper entry">
               <div class="slick-arrows__wrapper">
                 <button
                   class="slick-prev slick-arrow slick-arrow--hover"
@@ -239,21 +250,19 @@
                 <div class="slide">
                   <img
                     data-lazy="src/images/slider/photo-2.jpg"
-                    alt="Description of photo 2"
+                    alt="Jazzówki"
                   />
                 </div>
                 <div class="slide">
                   <img
                     data-lazy="src/images/slider/photo-2.jpg"
-                    alt="Description
-                of photo 2"
+                    alt="Jazzówki"
                   />
                 </div>
                 <div class="slide">
                   <img
                     data-lazy="src/images/slider/photo-2.jpg"
-                    alt="Description
-                of photo 2"
+                    alt="Jazzówki"
                   />
                 </div>
               </div>
@@ -279,66 +288,98 @@
           <div class="container-wide">
             <div class="grid">
               <div
-                class="grid__item-1 grid__item--large grid__item grid__item--mask grid__item--hover"
+                class="grid__item-1 grid__item--large grid__item grid__item--mask grid__item--hover entry"
               >
-                <img src="src/images/gallery/shoes-1.jpg" alt="Baleriny" />
+                <img
+                  class="lazy"
+                  data-src="src/images/gallery/shoes-1.jpg"
+                  alt="Baleriny"
+                />
                 <h3 class="item__title">Baleriny</h3>
               </div>
               <div
-                class="grid__item-2 grid__item--small grid__item grid__item--mask grid__item--hover"
+                class="grid__item-2 grid__item--small grid__item grid__item--mask grid__item--hover entry"
               >
-                <img src="src/images/gallery/shoes-2.jpg" alt="Mokasyny" />
+                <img
+                  class="lazy"
+                  data-src="src/images/gallery/shoes-2.jpg"
+                  alt="Mokasyny"
+                />
                 <h3 class="item__title">Mokasyny</h3>
               </div>
               <div
-                class="grid__item-3 grid__item--small grid__item grid__item--mask grid__item--hover"
+                class="grid__item-3 grid__item--small grid__item grid__item--mask grid__item--hover entry"
               >
-                <img src="src/images/gallery/shoes-3.jpg" alt="Jazzówki" />
+                <img
+                  class="lazy"
+                  data-src="src/images/gallery/shoes-3.jpg"
+                  alt="Jazzówki"
+                />
                 <h3 class="item__title">Jazzówki</h3>
               </div>
               <div
-                class="grid__item-4 grid__item--large grid__item grid__item--mask grid__item--hover"
+                class="grid__item-4 grid__item--large grid__item grid__item--mask grid__item--hover entry"
               >
-                <img src="src/images/gallery/shoes-4.jpg" alt="Kozaki" />
+                <img
+                  class="lazy"
+                  data-src="src/images/gallery/shoes-4.jpg"
+                  alt="Kozaki"
+                />
                 <h3 class="item__title">Kozaki</h3>
               </div>
               <div
-                class="grid__item-5 grid__item--large grid__item grid__item--mask grid__item--hover"
+                class="grid__item-5 grid__item--large grid__item grid__item--mask grid__item--hover entry"
               >
-                <img src="src/images/gallery/shoes-5.jpg" alt="Czółenka" />
+                <img
+                  class="lazy"
+                  data-src="src/images/gallery/shoes-5.jpg"
+                  alt="Czółenka"
+                />
                 <h3 class="item__title">Czółenka</h3>
               </div>
               <div
-                class="grid__item-6 grid__item--small grid__item grid__item--mask grid__item--hover"
+                class="grid__item-6 grid__item--small grid__item grid__item--mask grid__item--hover entry"
               >
-                <img src="src/images/gallery/shoes-6.jpg" alt="Sandały" />
+                <img
+                  class="lazy"
+                  data-src="src/images/gallery/shoes-6.jpg"
+                  alt="Sandały"
+                />
                 <h3 class="item__title">Sandały</h3>
               </div>
               <div
-                class="grid__item-7 grid__item--small grid__item grid__item--mask grid__item--hover"
+                class="grid__item-7 grid__item--small grid__item grid__item--mask grid__item--hover entry entry-top"
               >
-                <img src="src/images/gallery/shoes-7.jpg" alt="Półbuty" />
+                <img
+                  class="lazy"
+                  data-src="src/images/gallery/shoes-7.jpg"
+                  alt="Półbuty"
+                />
                 <h3 class="item__title">Półbuty</h3>
               </div>
               <div
-                class="grid__item-8 grid__item--large grid__item grid__item--mask grid__item--hover"
+                class="grid__item-8 grid__item--large grid__item grid__item--mask grid__item--hover entry entry-top"
               >
-                <img src="src/images/gallery/shoes-8.jpg" alt="Wyprzedaż" />
+                <img
+                  class="lazy"
+                  data-src="src/images/gallery/shoes-8.jpg"
+                  alt="Wyprzedaż"
+                />
                 <h3 class="item__title">Wyprzedaż</h3>
               </div>
             </div>
           </div>
         </section>
-        <section class="subscription">
+        <section class="subscription entry entry-top">
           <div class="container-wide">
             <div class="subscription__wrapper">
               <div class="subscription__icon-bg">
                 <img
                   src="src/images/icons/illustration.svg"
-                  alt="Description of photo 2"
+                  alt="lists"
                 />
               </div>
-              <div class="subscription__content">
+              <div class="subscription__content entry entry-left">
                 <h2 class="subscription__title">
                   Chcesz otrzymać
                   <span class="subscription__title--highlight">5%</span> zniżki
@@ -349,7 +390,7 @@
                   o nowościach, promocjach i ofertach specjalnych!
                 </p>
               </div>
-              <form class="subscription__form" novalidate>
+              <form class="subscription__form entry entry-right" novalidate>
                 <div class="subscription__form-wrapper">
                   <div class="subscription__input-box">
                     <div class="success-message"></div>
@@ -413,8 +454,8 @@
 
   <footer class="footer">
     <div class="container-wide">
-      <div class="footer__content">
-        <div class="footer__socials">
+      <div class="footer__content entry">
+        <div class="footer__socials entry entry-left">
           <h3 class="socials-title">Social media</h3>
           <ul class="socials-list">
             <li class="socials-list__item">
@@ -511,7 +552,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__contact">
+        <div class="footer__contact entry entry-right">
           <h3 class="contact-title contact-title--end">
             Skontaktuj się z nami
           </h3>
