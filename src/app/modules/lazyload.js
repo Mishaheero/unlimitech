@@ -7,7 +7,6 @@ module.exports.lazyLoading = () => {
     if (entry.isIntersecting) {
       const itemToEntry = entry.target;
       setTimeout(() => {
-        console.log("Item entered:", itemToEntry);
         itemToEntry.classList.remove("entry");
         itemToEntry.classList.add("entered");
         itemEntryObserver.unobserve(itemToEntry);
@@ -20,7 +19,7 @@ module.exports.lazyLoading = () => {
       (entries) => {
         entries.forEach(handleEntry);
       },
-      { rootMargin: "-100px 0px" }
+      { rootMargin: "-50px 0px" }
     );
   };
 
@@ -57,12 +56,10 @@ module.exports.lazyLoading = () => {
       lazyImage.src = img.src;
       lazyImage.classList.add("cover");
       lazyImage.classList.remove("lazy");
-      console.log("Image loaded:", lazyImage);
     };
 
     // Handles image load error
     img.onerror = () => {
-      // console.log(`Failed to load image with id ${randomImageId}. Trying another...`);
       const newImageId = Math.floor(Math.random() * 1000) + 1;
       setImage(newImageId);
     };

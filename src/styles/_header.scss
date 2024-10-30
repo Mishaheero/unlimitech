@@ -251,8 +251,13 @@
     }
 
     &__wrapper {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
       margin: 0;
       order: 2;
+      z-index: 20;
     }
 
     &__search-wrapper {
@@ -267,6 +272,7 @@
     .navigation__toggle {
       display: flex;
       z-index: 21;
+      margin-left: 10px;
     }
 
     .navigation__list {
